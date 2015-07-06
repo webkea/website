@@ -1,0 +1,139 @@
+/*SMALL SCREENS*/
+
+@media only screen and (max-width: 40em) {
+
+
+}
+
+
+/*MEDIUM SCREENS*/
+
+@media only screen and (min-width: 40em) {
+
+  #locale p,
+  #locale h4 {
+    text-align: left;
+  }
+  
+  #locale p {
+    padding: 0 1rem 1rem 0;
+    font-size: 10px;
+  }
+  
+  #work img {
+    padding: 1rem;
+  }
+  
+  .work-img img {
+    max-width: 100%;
+  }
+}
+
+  
+    
+
+  
+
+
+  
+/*LARGE SCREENS*/
+
+@media only screen and (min-width: 64.063em) { 
+
+}
+
+
+    
+
+/* iPhone 6 (portrait and landscape) ----------- */
+  
+
+
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 2){
+
+}
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2){
+  
+}   
+
+/* iPhone 6+ (portrait and landscape) ----------- */    
+    
+    
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 3) { 
+    
+    
+}
+
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 3) 
+{
+
+    
+}
+    
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    
+}
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width : 320px) {
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+ 
+    
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+    
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+    
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+    
+}    
