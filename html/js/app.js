@@ -1,1 +1,0 @@
-$(document).ready(function(){$(function(){$(".locale-pink").click(function(n){$(this).find("iframe").css("pointer-events","all")}).mouseleave(function(n){$(this).find("iframe").css("pointer-events","none")})})});
