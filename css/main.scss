@@ -31,6 +31,26 @@
 
 /*1rem = 16px*/
 
+/*VIDEO BG*/
+
+#homeLand, 
+#videoBG {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#videoBG .shade {
+  background: #24afaa;
+  background-image: -moz-linear-gradient(144deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+  background-image: -webkit-linear-gradient(144deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+  background-image: -ms-linear-gradient(144deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+  opacity: 0.9;
+  height: 100%;
+}
+
+
 
 /*NAVIGATION*/
 
@@ -44,10 +64,10 @@ nav img {
 /*FULLSCREEN HEADER*/
 
 header {
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.08)), url("../img/auckland_skyline.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.08)), url("../img/auckland_skyline.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.08)), url("../img/auckland_skyline.jpg");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.08)), url("../img/auckland_skyline.jpg");
+//  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.08)), url("../img/auckland_skyline.jpg");
+//  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.08)), url("../img/auckland_skyline.jpg");
+//  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.08)), url("../img/auckland_skyline.jpg");
+//  background-image: linear-gradient(top, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.08)), url("../img/auckland_skyline.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
