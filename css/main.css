@@ -11,7 +11,7 @@
   padding-top: 37px;
   padding-bottom: 19px;
   border-radius: 50%;
-  color: #ff6969;
+  color: #28C4DA;
   font-size: 36px;
   font-weight: 400;
   text-align: center; }
@@ -139,7 +139,7 @@ header {
 #intro h3,
 #features-part2 h3 {
   font-family: Ubuntu, Helvetica, sans-serif;
-  color: #ff6e6e;
+  color: #28C4DA;
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
@@ -158,8 +158,8 @@ header {
 .banner-1 {
   width: 100%;
   height: 25rem;
-  background-image: -webkit-linear-gradient(rgba(255, 89, 89, 0.2), rgba(194, 14, 14, 0.29)), url("../img/banner-1.jpg");
-  background-image: linear-gradient(rgba(255, 89, 89, 0.2), rgba(194, 14, 14, 0.29)), url("../img/banner-1.jpg");
+  background-image: -webkit-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
+  background-image: linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -194,15 +194,15 @@ header {
   padding-top: 0; }
 
 .button {
-  border: 2px solid #ff6e6e;
+  border: 2px solid #15b4c2;
   border-radius: 7px;
   font-family: Ubuntu, Helvetica, sans-serif;
   background-color: white;
-  color: #ff6e6e;
+  color: #57A8B3;
   margin-bottom: 4.5rem; }
 
 .button:hover {
-  background-color: rgba(255, 110, 110, 0.87); }
+  background-color: rgba(110, 194, 255, 0.87); }
 
 /*BANNER 2*/
 .banner-2 {
@@ -230,8 +230,8 @@ header {
 
 /*SECTION LOCALE*/
 .locale-pink {
-  background-image: -webkit-radial-gradient(50% 50%, circle, #ff5252, #ff7d7d);
-  background-image: radial-gradient(circle at 50% 50%, #ff5252, #ff7d7d);
+  background-image: -webkit-radial-gradient(50% 50%, circle, #467287, #28ADAC);
+  background-image: radial-gradient(circle at 50% 50%, #467287, #28ADAC);
   color: white;
   padding-bottom: 3.5rem; }
   .locale-pink iframe {
