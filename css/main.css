@@ -1,9 +1,7 @@
 /*GENERAL*/
 @font-face {
   font-family: "webkea-font";
-  src: url(../fonts/webkea-font.ttf) format("truetype");
-}
-
+  src: url(../fonts/webkea-font.ttf) format("truetype"); }
 .webkea-font {
   font-family: "webkea-font";
   display: block;
@@ -16,18 +14,52 @@
   color: #ff6969;
   font-size: 36px;
   font-weight: 400;
-  text-align: center;
-}
+  text-align: center; }
 
-.top-bar {
-  background: #333333;
-}
+nav {
+  font-size: .8rem;
+  position: fixed;
+  z-index: 1000;
+  border-bottom: solid .4rem #D2E7E5;
+  width: 100%;
+  background-image: -webkit-linear-gradient(126deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+  background-image: linear-gradient(324deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+  height: 3rem; }
+  nav ul {
+    float: right;
+    margin-right: 2rem; }
+  nav li {
+    display: inline;
+    line-height: 3rem; }
+    nav li a {
+      padding: .8rem;
+      color: #fff;
+      text-decoration: none; }
+  nav .logo {
+    float: left;
+    font-size: 1rem;
+    margin-left: 2rem;
+    line-height: 3rem;
+    color: #ddd;
+    text-decoration: none; }
+  nav .menu-button {
+    display: none;
+    font-size: 1.4rem;
+    float: right;
+    color: #fff;
+    line-height: 3rem;
+    margin-right: 3rem; }
+  nav .menu-close {
+    display: none; }
+
+.nav-icons {
+  padding-left: .3rem;
+  font-size: 1rem; }
 
 #features ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*1rem = 16px*/
 /*VIDEO BG*/
@@ -36,24 +68,20 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: -1;
-}
+  z-index: -1; }
 
 #videoBG .shade {
   background: #24afaa;
   background-image: -webkit-linear-gradient(144deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
-  background-image: -ms-linear-gradient(144deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
   opacity: 0.9;
-  height: 100%;
-}
+  height: 100%; }
 
 /*NAVIGATION*/
 nav img {
   display: inline;
   width: 2.5rem;
   margin-right: 0.5rem;
-  margin-bottom: 0.47rem;
-}
+  margin-bottom: 0.47rem; }
 
 /*FULLSCREEN HEADER*/
 header {
@@ -62,8 +90,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 0;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .title {
   font-family: Ubuntu, Helvetica, sans-serif;
@@ -77,8 +104,7 @@ header {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  padding: 3.5rem 1;
-}
+  padding: 3.5rem 1; }
 
 /*SECTION INTRO*/
 #intro,
@@ -89,12 +115,10 @@ header {
   padding-bottom: 3.5rem;
   background: white;
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
 #locale {
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
 #intro img,
 #features-part2 img {
@@ -102,8 +126,7 @@ header {
   height: 11rem;
   border-radius: 100%;
   border: 0.4rem solid rgba(224, 224, 224, 0.78);
-  padding: .38rem;
-}
+  padding: .38rem; }
 
 #intro h3,
 #features-part2 h3 {
@@ -112,8 +135,7 @@ header {
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
-  padding-top: 1rem;
-}
+  padding-top: 1rem; }
 
 #intro p,
 #features-part2 p,
@@ -122,8 +144,7 @@ header {
   color: #9c9c9c;
   font-size: 14px;
   text-align: center;
-  padding: 0 2rem 1rem 2rem;
-}
+  padding: 0 2rem 1rem 2rem; }
 
 /*BANNER 1*/
 .banner-1 {
@@ -135,8 +156,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 2rem;
-}
+  padding: 0 2rem; }
 
 /*
 .banner-1 h2{
@@ -149,14 +169,12 @@ header {
   padding-bottom: 3.5rem;
   background-color: whitesmoke;
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
 #features h3,
 #work h3,
 #locale h3 {
-  color: grey;
-}
+  color: grey; }
 
 #features h4,
 #locale h4 {
@@ -165,8 +183,7 @@ header {
   font-size: .8rem;
   font-weight: 400;
   text-align: center;
-  padding-top: 0;
-}
+  padding-top: 0; }
 
 .button {
   border: 2px solid #ff6e6e;
@@ -174,12 +191,10 @@ header {
   font-family: Ubuntu, Helvetica, sans-serif;
   background-color: white;
   color: #ff6e6e;
-  margin-bottom: 4.5rem;
-}
+  margin-bottom: 4.5rem; }
 
 .button:hover {
-  background-color: rgba(255, 110, 110, 0.87);
-}
+  background-color: rgba(255, 110, 110, 0.87); }
 
 /*BANNER 2*/
 .banner-2 {
@@ -191,45 +206,35 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 2rem;
-}
+  padding: 0 2rem; }
 
 /*SECTION WORK*/
 #work img {
-  padding: 2rem;
-}
+  padding: 2rem; }
 
 .work-img img {
   max-width: 70%;
   -webkit-transition: all 300ms ease;
-          transition: all 300ms ease;
-}
+          transition: all 300ms ease; }
 
 .work-img img:hover {
-  max-width: 90%;
-}
+  max-width: 90%; }
 
 /*SECTION LOCALE*/
 .locale-pink {
   background-image: -webkit-radial-gradient(50% 50%, circle, #ff5252, #ff7d7d);
   background-image: radial-gradient(circle at 50% 50%, #ff5252, #ff7d7d);
   color: white;
-  padding-bottom: 3.5rem;
-}
-
-.locale-pink iframe {
-  pointer-events: none;
-}
+  padding-bottom: 3.5rem; }
+  .locale-pink iframe {
+    pointer-events: none; }
 
 .locale-map {
-  padding-top: .6rem;
-}
+  padding-top: .6rem; }
 
 #locale h4,
 #locale p {
-  color: white;
-}
+  color: white; }
 
 .footer {
-  padding: 0 2rem;
-}
+  padding: 0 2rem; }
