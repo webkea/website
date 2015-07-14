@@ -16,15 +16,26 @@
   font-weight: 400;
   text-align: center; }
 
+/*NAVIGATION*/
+nav img {
+  display: inline;
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.47rem; }
+
 nav {
   font-size: .8rem;
   position: fixed;
+  top: 0;
   z-index: 1000;
   border-bottom: solid .4rem #D2E7E5;
   width: 100%;
   background-image: -webkit-linear-gradient(126deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
   background-image: linear-gradient(324deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
-  height: 3rem; }
+  height: 3.4rem; }
+  nav h1 {
+    margin-bottom: 0;
+    margin-top: 0; }
   nav ul {
     float: right;
     margin-right: 2rem; }
@@ -40,8 +51,10 @@ nav {
     font-size: 1rem;
     margin-left: 2rem;
     line-height: 3rem;
-    color: #ddd;
+    color: #fff;
     text-decoration: none; }
+    nav .logo a {
+      color: #fff; }
   nav .menu-button {
     display: none;
     font-size: 1.4rem;
@@ -75,13 +88,6 @@ nav {
   background-image: -webkit-linear-gradient(144deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
   opacity: 0.9;
   height: 100%; }
-
-/*NAVIGATION*/
-nav img {
-  display: inline;
-  width: 2.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.47rem; }
 
 /*FULLSCREEN HEADER*/
 header {
