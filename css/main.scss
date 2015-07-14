@@ -30,11 +30,12 @@ nav img {
 }
 
 nav {
+  opacity: .98;
   font-size: .8rem;
   position: fixed;
   top: 0;
   z-index: 1000;
-  border-bottom: solid .4rem rgba(210, 231, 229, 0.25);
+  border-bottom: solid .4rem rgba(210, 231, 229, 0.8);
   width: 100%;
   background-image: linear-gradient(324deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
   height: 3.4rem;

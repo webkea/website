@@ -5,7 +5,7 @@
     opacity: 1;
     margin-top: 3rem;
     margin-right: -100%;
-    border: solid 0.4rem rgba(210, 231, 229, 0.25);
+    border: solid 0.4rem rgba(210, 231, 229, 0.8);
     border-top: 0;
     background-image: -webkit-linear-gradient(232deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
     background-image: linear-gradient(218deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
