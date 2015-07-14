@@ -18,6 +18,7 @@
 
 /*NAVIGATION*/
 nav img {
+  opacity: .95;
   display: inline;
   width: 2.5rem;
   margin-right: 0.5rem;
@@ -44,7 +45,7 @@ nav {
     line-height: 3rem; }
     nav li a {
       padding: .8rem;
-      color: #fff;
+      color: rgba(255, 255, 255, 0.95);
       text-decoration: none; }
   nav .logo {
     float: left;
@@ -54,7 +55,7 @@ nav {
     color: #fff;
     text-decoration: none; }
     nav .logo a {
-      color: #fff; }
+      color: rgba(255, 255, 255, 0.9); }
   nav .menu-button {
     display: none;
     font-size: 1.4rem;

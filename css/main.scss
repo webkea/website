@@ -22,6 +22,7 @@
 /*NAVIGATION*/
 
 nav img {
+  opacity: .95;
   display: inline;
   width: 2.5rem;
   margin-right: 0.5rem;
@@ -50,7 +51,7 @@ nav {
     line-height: 3rem;
     a {
       padding: .8rem;
-      color: #fff;
+      color: rgba(255, 255, 255, 0.95);
       text-decoration: none;
     }
   }
@@ -62,7 +63,7 @@ nav {
     color: #fff;
     text-decoration: none;
     a {
-      color: #fff;
+      color: rgba(255, 255, 255, 0.9);
     }
   }
   .menu-button {
