@@ -13,14 +13,76 @@
   padding-top: 37px;
   padding-bottom: 19px;
   border-radius: 50%;
-  color: #ff6969;
+  color: #28C4DA;
   font-size: 36px;
   font-weight: 400;
   text-align: center;
 }
 
-.top-bar {
-  background: #333333;
+/*NAVIGATION*/
+
+nav img {
+  opacity: .95;
+  display: inline;
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.47rem;
+}
+
+nav {
+  opacity: .98;
+  font-size: .8rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: solid .4rem rgba(210, 231, 229, 0.8);
+  width: 100%;
+  background-image: linear-gradient(324deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+  height: 3.4rem;
+  h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  ul {
+    float: right;
+    margin-right: 2rem;
+  }
+  li {
+    display: inline;
+    line-height: 3rem;
+    a {
+      padding: .8rem;
+      color: rgba(255, 255, 255, 0.95);
+      text-decoration: none;
+    }
+  }
+  .logo {
+    float: left;
+    font-size: 1rem;
+    margin-left: 2rem;
+    line-height: 3rem;
+    color: #fff;
+    text-decoration: none;
+    a {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+  .menu-button {
+    display: none;
+    font-size: 1.4rem;
+    float: right;
+    color: #fff;
+    line-height: 3rem;
+    margin-right: 3rem;
+  }
+  .menu-close {
+    display: none;
+  }
+}
+
+.nav-icons {
+  padding-left: .3rem;
+  font-size: 1rem;
 }
 
 #features ul {
@@ -33,7 +95,7 @@
 
 /*VIDEO BG*/
 
-#homeLand, 
+#homeLand,
 #videoBG {
   height: 100%;
   width: 100%;
@@ -50,16 +112,6 @@
   height: 100%;
 }
 
-
-
-/*NAVIGATION*/
-
-nav img {
-  display: inline;
-  width: 2.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.47rem;
-}
 
 /*FULLSCREEN HEADER*/
 
@@ -122,7 +174,7 @@ header {
 #intro h3,
 #features-part2 h3 {
   font-family: Ubuntu, Helvetica, sans-serif;
-  color: #ff6e6e;
+  color: #28C4DA;
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
@@ -144,10 +196,10 @@ header {
 .banner-1 {
   width: 100%;
   height: 25rem;
-  background-image: -moz-linear-gradient(rgba(255, 89, 89, 0.2), rgba(194, 14, 14, 0.29)), url("../img/banner-1.jpg");
-  background-image: -webkit-linear-gradient(rgba(255, 89, 89, 0.2), rgba(194, 14, 14, 0.29)), url("../img/banner-1.jpg");
-  background-image: -ms-linear-gradient(rgba(255, 89, 89, 0.2), rgba(194, 14, 14, 0.29)), url("../img/banner-1.jpg");
-  background-image: linear-gradient(rgba(255, 89, 89, 0.2), rgba(194, 14, 14, 0.29)), url("../img/banner-1.jpg");
+  background-image: -moz-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
+  background-image: -webkit-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
+  background-image: -ms-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
+  background-image: linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -189,16 +241,16 @@ header {
 }
 
 .button {
-  border: 2px solid #ff6e6e;
+  border: 2px solid #15b4c2;
   border-radius: 7px;
   font-family: Ubuntu, Helvetica, sans-serif;
   background-color: white;
-  color: #ff6e6e;
+  color: #57A8B3;
   margin-bottom: 4.5rem;
 }
 
 .button:hover {
-  background-color: rgba(255, 110, 110, 0.87);
+  background-color: rgba(110, 194, 255, 0.87);
 }
 
 /*BANNER 2*/
@@ -236,7 +288,7 @@ header {
 /*SECTION LOCALE*/
 
 .locale-pink {
-  background-image: radial-gradient(circle at 50% 50%, #ff5252, #ff7d7d);
+  background-image: radial-gradient(circle at 50% 50%, #467287, #28ADAC);
   color: white;
   padding-bottom: 3.5rem;
 

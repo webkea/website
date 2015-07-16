@@ -1,1 +1,61 @@
-@media only screen and (min-width:40em){#locale h4,#locale p{text-align:left}#locale p{padding:0 1rem 1rem 0;font-size:10px}#work img{padding:1rem}.work-img img{max-width:100%}}
+/*SMALL SCREENS*/
+@media (max-width: 850px) {
+  nav ul {
+    width: 12rem;
+    opacity: 1;
+    margin-top: 3rem;
+    margin-right: -100%;
+    border: solid 0.4rem rgba(210, 231, 229, 0.8);
+    border-top: 0;
+    background-image: -webkit-linear-gradient(232deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+    background-image: linear-gradient(218deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+    -webkit-transition: all 400ms ease;
+            transition: all 400ms ease; }
+    nav ul li {
+      padding: .5rem;
+      font-size: 1rem;
+      text-align: right;
+      display: block; }
+  nav .menu-button {
+    display: block;
+    cursor: pointer;
+    -webkit-transition: all 100ms ease;
+            transition: all 100ms ease; }
+    nav .menu-button:hover {
+      color: #ddd; }
+  nav .menu-open::after {
+    font-size: 2rem;
+    content: "\2261"; }
+  nav .menu-close::after {
+    content: "\2715"; }
+  nav .show-menu {
+    opacity: 1;
+    margin-right: -3rem; }
+
+  .nav-icons {
+    padding-left: .8rem;
+    font-size: 1.5rem; } }
+/*MEDIUM SCREENS*/
+@media only screen and (min-width: 40em) {
+  #locale p,
+  #locale h4 {
+    text-align: left; }
+
+  #locale p {
+    padding: 0 1rem 1rem 0;
+    font-size: 10px; }
+
+  #work img {
+    padding: 1rem; }
+
+  .work-img img {
+    max-width: 100%; } }
+/*LARGE SCREENS*/
+/* iPhone 6 (portrait and landscape) ----------- */
+/* iPhone 6+ (portrait and landscape) ----------- */
+/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+/* iPads (portrait and landscape) ----------- */
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
+/* iPhone 4 ----------- */
