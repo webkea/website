@@ -6,9 +6,9 @@
     %title WebKea | Welcome
     %link{:href => "css/reset.css", :rel => "stylesheet"}/
     %link{:href => "css/foundation.css", :rel => "stylesheet"}/
+    %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "css/main.css", :rel => "stylesheet"}/
     %link{:href => "css/responsive.css", :rel => "stylesheet"}/
-    %link{:href => "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Ubuntu:400,500", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "http://fonts.googleapis.com/css?family=Droid Sans:400", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
@@ -54,8 +54,18 @@
             %span.nav-icons
               %i.icon.icon-map-marker
     %header
-      %h2.title
-        Brilliant Online Creations.
+      .header-text
+        %h2.title
+          Brilliant Online Creations.
+        %h3.subtitle
+          Lorem epsum sitit ama corum erom.
+        .main-form  
+          %form{:action => ""}
+            %input{:type => "text", :placeholder => "email"}/
+            %button{:type => "submit"}
+              %i.fa.fa-arrow-circle-o-right.fa-2x
+        %p
+          Get in touch for a free consultation.
     %section#intro
       .row
         .columns.medium-4

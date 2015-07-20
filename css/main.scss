@@ -109,20 +109,43 @@ header {
   background-size: cover;
   padding-top: 0;
   height: 100vh;
+  .main-form {
+    position: relative;
+    margin: 2rem auto .4rem auto;
+    text-align: center;
+  }
+  input[type="text"] {
+    width: 20rem;
+    border-radius: 2rem;
+    color: #1488A4;
+  }
+  button {
+    background: transparent;
+    color: #1488A4;
+    position: relative;
+  }
 }
 
-
-.title {
+.header-text {
   font-family: Ubuntu, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 3.5rem;
-  margin-top: 0;
-  text-align: center;
-  color: white;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  
+}
+
+.title {
+  color: white;
+  font-weight: 400;
+  font-size: 3.5rem;
+  margin-top: 0;
   padding: 3.5rem 1;
+}
+
+.subtitle {
+  color: white;
 }
 
 

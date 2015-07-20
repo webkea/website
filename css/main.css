@@ -117,19 +117,45 @@ header {
   height: 100vh;
 }
 
-.title {
-  font-family: Ubuntu, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 3.5rem;
-  margin-top: 0;
+header .main-form {
+  position: relative;
+  margin: 2rem auto 0.4rem auto;
   text-align: center;
-  color: white;
+}
+
+header input[type="text"] {
+  width: 20rem;
+  border-radius: 2rem;
+  color: #1488A4;
+}
+
+header button {
+  background: transparent;
+  color: #1488A4;
+  position: relative;
+}
+
+.header-text {
+  font-family: Ubuntu, Helvetica, sans-serif;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.title {
+  color: white;
+  font-weight: 400;
+  font-size: 3.5rem;
+  margin-top: 0;
   padding: 3.5rem 1;
+}
+
+.subtitle {
+  color: white;
 }
 
 /*SECTION INTRO*/
