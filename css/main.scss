@@ -84,7 +84,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 200;
-}logo
+}
 
 .nav-icons {
   padding-left: .3rem;
@@ -102,7 +102,7 @@ nav {
 /*FULLSCREEN HEADER*/
 
 header {
-  background-image: linear-gradient(top, rgba(3, 118, 188, 0.32), rgba(36, 172, 171, 0.39)), url("../img/ocean.jpeg");
+  background-image: linear-gradient(top, rgba(3, 118, 188, 0.72), rgba(36, 172, 171, 0.39)), url("../img/ocean.jpeg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -117,13 +117,61 @@ header {
   input[type="text"] {
     width: 20rem;
     border-radius: 2rem;
-    color: #1488A4;
+    background-color: rgba(26, 178, 215, 0.64);
+    border-style: solid;  
+    border-width: .4rem;
+    border-color: rgb(179, 234, 247);
+    color: #fff;
+    display: inline;
+    height: 3rem;
+    margin: 0 auto;
+    
+    &:focus {
+      color: rgba(114, 134, 134, 0.88);
+      border-color: rgb(179, 234, 247);
+    }
+    
+    &:active {
+      color: #fff;
+    }
+    
+    &::-webkit-input-placeholder {
+      color: rgb(179, 234, 247);
+      padding-left: 1.8rem;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: rgb(179, 234, 247);
+      padding-left: 1.8rem;    
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: rgb(179, 234, 247);
+      padding-left: 1.8rem;   
+    }
+    &:-ms-input-placeholder {  
+      color: rgb(179, 234, 247);
+      padding-left: 1.8rem; 
+    }  
   }
+  
+  p {
+    font-family: Droid Sans;
+    margin-top: -1rem;
+    font-size: .9rem;
+  }
+  
   button {
     background: transparent;
-    color: #1488A4;
-    position: relative;
+    diplay: inline;
+    padding: 0; 
   }
+}
+
+.submit {
+  vertical-align: middle;
+  margin-left: -3.6rem;
+  margin-top: -.12rem;
+  font-size: 2.9em !important;
+  color: rgb(179, 234, 247);
 }
 
 .header-text {
@@ -137,6 +185,11 @@ header {
 }
 
 .title {
+  text-align: center;
+  position: relative;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  top: 50%;
+  transform: translateY(-50%);
   color: white;
   font-weight: 400;
   font-size: 3.5rem;
@@ -146,19 +199,15 @@ header {
 
 .subtitle {
   color: white;
+  font-family: Ubuntu, Helvetica, sans-serif;
 }
-
-
-
 
 /*SECTION INTRO*/
 
 #intro,
 #features-part2,
-#work,
-#locale {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+#work {
+  padding: 5.5rem 0;
   background: white;
   width: 100%;
   text-align: center;
@@ -166,6 +215,8 @@ header {
 
 #locale {
   padding-bottom: 0;
+  width: 100%;
+  text-align: center
 }
 
 #intro img,
@@ -179,7 +230,7 @@ header {
 
 #intro h3,
 #features-part2 h3 {
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   color: #28C4DA;
   font-size: 1.5rem;
   font-weight: 500;
@@ -195,6 +246,7 @@ header {
   font-size: 14px;
   text-align: center;
   padding: 0 2rem 1rem 2rem;
+  margin-bottom: 0;
 }
 
 /*BANNER 1*/
@@ -223,7 +275,7 @@ header {
 /*SECTION FEATURES*/
 
 #features {
-  padding-top: 3.5rem;
+  padding-top: 5rem;
   padding-bottom: 3.5rem;
   background-color: whitesmoke;
   width: 100%;
@@ -291,6 +343,10 @@ header {
   max-width: 90%;
 }
 
+.work-top-padding {
+  padding-top: 3.75rem;
+}
+
 /*SECTION LOCALE*/
 
 .locale-pink {
@@ -313,9 +369,13 @@ header {
 }
 
 .footer {
-  padding: 0 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .social-media {
   font-size: 1.5rem;
+}
+
+.light-title {
+  font-weight: 200 !important;
 }
