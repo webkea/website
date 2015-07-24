@@ -19,4 +19,5 @@ body {
     letter-spacing: .3rem; }
   body img {
     display: inline;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    max-height: 9rem; }
