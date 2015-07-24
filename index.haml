@@ -12,6 +12,8 @@
     %link{:href => "http://fonts.googleapis.com/css?family=Ubuntu:400,500", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "http://fonts.googleapis.com/css?family=Droid Sans:400,200", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "img/favicon.png", :rel => "icon"}/
+    %link{:href => "img/apple-touch-icon-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
     %script{:src => "js/min/modernizr.js"}
     %script{:src => "js/min/jquery-1.11.3.min.js"}
     %script{:src => "js/min/skrollr.js"}
@@ -62,7 +64,7 @@
         .main-form  
           %form{:action => ""}
             %input{:type => "text", :placeholder => "enter your email"}/
-            %button{:type => "submit"}
+            %button.email-button{:type => "submit"}
               %i.fa.fa-arrow-circle-right.submit
         %p
           Get in touch for a free consultation.
@@ -181,16 +183,21 @@
               ✉ info@webkea.co.nz
             %p
               ☎ +64 211826521
-          .columns.medium-4
-            %h4 REQUEST A CONSULT
-            %p Interested in a free consultation? Enter your email address below and we’ll get in touch with you.
-
             .row.social-media
               .columns.small-4
                 %i.fa.fa-twitter-square
               .columns.small-4
                 %i.fa.fa-facebook-square
               .columns.small-4
-                %i.fa.fa-linkedin-square
+                %i.fa.fa-linkedin-square    
+          .columns.medium-4
+            %h4 REQUEST A CONSULT
+            %p Interested in a free consultation? Enter your email address below and we’ll get in touch with you.
+            %form.footer-email-form
+              .row.collapse.postfix-round
+                .small-9.columns
+                  %input.footer-email{:placeholder => "Enter your email", :type => "text"}/
+                .small-3.columns
+                  %a.button.postfix.footer-email-button{:href => "#"} SEND
     :javascript
       var s = skrollr.init();
