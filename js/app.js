@@ -40,4 +40,13 @@ $(document).ready(function() {
           $(this).find('iframe').css('pointer-events', 'none');
       });
   });
+  $(function() {
+    var thanks = window.location.hash;
+    if (thanks === "#thanks") {
+      $('body').append("<div class='notification'><p>Thanks. We'll be in touch shortly.</p></div>");
+      setTimeout(function() {
+        $('.notification').fadeOut('slow');
+      }, 2500);
+    }
+  });
 });
