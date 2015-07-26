@@ -32,6 +32,10 @@ button, .button {
 
 /*NAVIGATION*/
 
+.active {
+  text-shadow: 0 0 3px #FFF;
+}
+
 nav img {
   opacity: .95;
   display: inline;
@@ -61,8 +65,22 @@ nav {
     line-height: 3rem;
     a {
       padding: .8rem;
-      color: rgba(255, 255, 255, 0.95);
+      color: rgba(255, 255, 255, 0.9);
       text-decoration: none;
+      transition: all ease 260ms;
+      &:hover {
+        color: #fff;
+        text-shadow: 0 0 3px #FFF;
+      }
+      &:active {
+        color: rgba(255, 255, 255, 0.9);
+      }
+      &:visited {
+        color: rgba(255, 255, 255, 0.9);
+      }
+      &:focus {
+        color: rgba(255, 255, 255, 0.9);
+      }
     }
   }
   .logo {
@@ -129,51 +147,51 @@ header {
     width: 20rem;
     border-radius: 2rem;
     background-color: rgba(26, 178, 215, 0.64);
-    border-style: solid;  
+    border-style: solid;
     border-width: .4rem;
     border-color: rgb(179, 234, 247);
     color: #fff;
     display: inline;
     height: 3rem;
     margin: 0 auto;
-    
+
     &:focus {
       color: rgba(114, 134, 134, 0.88);
       border-color: rgb(179, 234, 247);
     }
-    
+
     &:active {
       color: #fff;
     }
-    
+
     &::-webkit-input-placeholder {
       color: rgb(179, 234, 247);
       padding-left: 1.8rem;
     }
     &:-moz-placeholder { /* Firefox 18- */
       color: rgb(179, 234, 247);
-      padding-left: 1.8rem;    
+      padding-left: 1.8rem;
     }
     &::-moz-placeholder {  /* Firefox 19+ */
       color: rgb(179, 234, 247);
-      padding-left: 1.8rem;   
+      padding-left: 1.8rem;
     }
-    &:-ms-input-placeholder {  
+    &:-ms-input-placeholder {
       color: rgb(179, 234, 247);
-      padding-left: 1.8rem; 
-    }  
+      padding-left: 1.8rem;
+    }
   }
-  
+
   p {
     font-family: Droid Sans;
     margin-top: -1rem;
     font-size: .9rem;
   }
-  
+
   .email-button {
     background: transparent;
-    diplay: inline;
-    padding: 0; 
+    display: inline;
+    padding: 0;
   }
 }
 
@@ -192,7 +210,7 @@ header {
   transform: translateY(-50%);
   text-align: center;
   color: white;
-  
+
 }
 
 .title {
@@ -215,10 +233,22 @@ header {
 
 /*SECTION INTRO*/
 
-#intro,
-#features-part2,
 #work {
   padding: 5.5rem 0;
+  background: white;
+  width: 100%;
+  text-align: center;
+}
+
+#intro {
+  padding-top: 5.5rem;
+  background: white;
+  width: 100%;
+  text-align: center;
+}
+
+.features-part2 {
+  padding-top: 5.5rem;
   background: white;
   width: 100%;
   text-align: center;
@@ -231,7 +261,7 @@ header {
 }
 
 #intro img,
-#features-part2 img{
+.features-part2 img{
   width: 11rem;
   height: 11rem;
   border-radius: 100%;
@@ -240,7 +270,7 @@ header {
 }
 
 #intro h3,
-#features-part2 h3 {
+.features-part2 h3 {
   font-family: Helvetica, sans-serif;
   color: #28C4DA;
   font-size: 1.5rem;
@@ -250,7 +280,7 @@ header {
 }
 
 #intro p,
-#features-part2 p,
+.features-part2 p,
 #locale p {
   font-family: 'Droid Sans', sans-serif;
   color: #9c9c9c;
@@ -274,14 +304,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 2rem;
+  margin-top: 5rem;
 }
-
-/*
-.banner-1 h2{
-  transform: translateY(0%);
-}
-*/
-
 
 /*SECTION FEATURES*/
 
@@ -323,6 +347,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 2rem;
+  margin-top: 5rem;
 }
 
 /*SECTION WORK*/
@@ -406,11 +431,11 @@ header {
     }
     &::-moz-placeholder {  /* Firefox 19+ */
       color: rgb(117, 181, 196);
- 
+
     }
-    &:-ms-input-placeholder {  
+    &:-ms-input-placeholder {
       color: rgb(117, 181, 196);
 
-    }  
+    }
   }
 }

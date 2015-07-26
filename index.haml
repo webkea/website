@@ -24,38 +24,38 @@
     %nav
       %h1
         %h1.logo{"data-90" => "font-size: 2rem;", "data-650" => "font-size: 1.2rem;"}
-          %a{:href => "#"}
+          %a{"data-scroll" => "home", :href => "#"}
             %img{"data-90" => "width: 3rem;", "data-650" => "width: 2.5rem;", :src => "img/webkea-logo-nav.png"}
             = precede 'WEB' do
               %strong KEA
       %span.menu-button.menu-open
       %ul
         %li
-          %a{:href => '#'}
+          %a.link{"data-scroll" => "home", :href => '#'}
             HOME
             %span.nav-icons
               %i.icon.icon-home
         %li
-          %a{:href => '#intro'}
+          %a.link{"data-scroll" => "intro", :href => '#intro'}
             ABOUT
             %span.nav-icons
               %i.icon.icon-lightbulb
         %li
-          %a{:href => '#features'}
+          %a.link{"data-scroll" => "features", :href => '#features'}
             FEATURES
             %span.nav-icons
               %i.icon.icon-code
         %li
-          %a{:href => '#work'}
+          %a.link{"data-scroll" => "work", :href => '#work'}
             WORK
             %span.nav-icons
               %i.icon.icon-cog
         %li
-          %a{:href => '#locale'}
+          %a.link{"data-scroll" => "locale", :href => '#locale'}
             LOCALE
             %span.nav-icons
               %i.icon.icon-map-marker
-    %header
+    %header.page{"data-anchor" => "home"}
       .header-text
         %h2.title
           Brilliant Online Creations.
@@ -68,7 +68,7 @@
               %i.fa.fa-arrow-circle-right.submit
         %p
           Get in touch for a free consultation.
-    %section#intro
+    %section#intro.page{"data-anchor" => "intro"}
       .row
         .columns.medium-4
           %img{:src => "img/intro-pen.jpg"}
@@ -82,12 +82,11 @@
           %img{:src => "img/intro-mac.jpg"}
             %h3 HOSTING
             %p We believe in offering you a total solution for your online brand.
-    %section
       .banner-1
         %h2.title
           Delivering Your Brand To All Devices
           %br With Design-Powered Solutions.
-    %section#features
+    %section#features.page{"data-anchor" => "features"}
       %h3
         OUR
         %strong FEATURES
@@ -116,7 +115,7 @@
           .features-logos
             %span.webkea-font 
           %h4 AND MORE...
-    %section#features-part2
+    .features-part2
       .row
         .columns.medium-4
           %img{:src => "img/web-starter.jpg"}
@@ -136,12 +135,11 @@
               WEB
               %strong> APPS
             %p Solutions for CMS, e-commerce or high-end web applications. Update your content as you like.
-    %section
       .banner-2
         %h2.title
           Passionate. Driven. Creative.
           %br We Live For Design.
-    %section#work
+    %section#work.page{"data-anchor" => "work"}
       %h3
         OUR
         %strong WORK
@@ -165,7 +163,7 @@
         .columns.medium-4
           %a.work-img{:href => "#"}
             %img{:src => "img/site-6.jpg"}/
-    %section#locale
+    %section#locale.page{"data-anchor" => "locale"}
       .locale-pink
         %iframe.locale-map{:allowfullscreen => "", :frameborder => "0", :height => "400", :src => "https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3193.9903114574904!2d174.62767683075887!3d-36.81875208072347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-36.818787!2d174.629636!5e0!3m2!1sen!2sus!4v1435278286106", :style => "border:0", :width => "100%"}
         .row.footer

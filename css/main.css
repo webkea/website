@@ -25,6 +25,9 @@ button, .button {
   border-width: 0; }
 
 /*NAVIGATION*/
+.active {
+  text-shadow: 0 0 3px #FFF; }
+
 nav img {
   opacity: .95;
   display: inline;
@@ -51,8 +54,19 @@ nav {
     line-height: 3rem; }
     nav li a {
       padding: .8rem;
-      color: rgba(255, 255, 255, 0.95);
-      text-decoration: none; }
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      -webkit-transition: all ease 260ms;
+              transition: all ease 260ms; }
+      nav li a:hover {
+        color: #fff;
+        text-shadow: 0 0 3px #FFF; }
+      nav li a:active {
+        color: rgba(255, 255, 255, 0.9); }
+      nav li a:visited {
+        color: rgba(255, 255, 255, 0.9); }
+      nav li a:focus {
+        color: rgba(255, 255, 255, 0.9); }
   nav .logo {
     float: left;
     margin-left: 2rem;
@@ -138,7 +152,7 @@ header {
     font-size: .9rem; }
   header .email-button {
     background: transparent;
-    diplay: inline;
+    display: inline;
     padding: 0; }
 
 .submit {
@@ -177,10 +191,20 @@ header {
   font-family: Ubuntu, Helvetica, sans-serif; }
 
 /*SECTION INTRO*/
-#intro,
-#features-part2,
 #work {
   padding: 5.5rem 0;
+  background: white;
+  width: 100%;
+  text-align: center; }
+
+#intro {
+  padding-top: 5.5rem;
+  background: white;
+  width: 100%;
+  text-align: center; }
+
+.features-part2 {
+  padding-top: 5.5rem;
   background: white;
   width: 100%;
   text-align: center; }
@@ -191,7 +215,7 @@ header {
   text-align: center; }
 
 #intro img,
-#features-part2 img {
+.features-part2 img {
   width: 11rem;
   height: 11rem;
   border-radius: 100%;
@@ -199,7 +223,7 @@ header {
   padding: .38rem; }
 
 #intro h3,
-#features-part2 h3 {
+.features-part2 h3 {
   font-family: Helvetica, sans-serif;
   color: #28C4DA;
   font-size: 1.5rem;
@@ -208,7 +232,7 @@ header {
   padding-top: 1rem; }
 
 #intro p,
-#features-part2 p,
+.features-part2 p,
 #locale p {
   font-family: 'Droid Sans', sans-serif;
   color: #9c9c9c;
@@ -227,13 +251,9 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  margin-top: 5rem; }
 
-/*
-.banner-1 h2{
-  transform: translateY(0%);
-}
-*/
 /*SECTION FEATURES*/
 #features {
   padding-top: 5rem;
@@ -266,7 +286,8 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  margin-top: 5rem; }
 
 /*SECTION WORK*/
 #work img {
