@@ -64,8 +64,8 @@
         .main-form
           %form{:action => "https://getsimpleform.com/messages?form_api_token=0fc8288fc7fbb65677132d49252e7582", :method => "post"}
             %input{:name => "redirect_to", :type => "hidden", :value => "http://webkea.co.nz/#thanks"}/
-            %input{:type => "text", :placeholder => "enter your email"}/
-            %button.email-button{:type => "submit"}
+            %input{:type => "text", :name => "email", :placeholder => "enter your email"}/
+            %button.email-button{:type => "submit", :value => "consultation form"}
               %i.fa.fa-arrow-circle-right.submit
         %p
           Get in touch for a free consultation.
@@ -196,8 +196,8 @@
               .row.collapse.postfix-round
                 .small-9.columns
                   %input{:name => "redirect_to", :type => "hidden", :value => "http://webkea.co.nz/#thanks"}/
-                  %input.footer-email{:placeholder => "Enter your email", :type => "text"}/
+                  %input.footer-email{:placeholder => "Enter your email", :name => "email", :type => "text"}/
                 .small-3.columns
-                  %button.postfix.footer-email-button{:type => "submit"} SEND
+                  %button.postfix.footer-email-button{:type => "submit", :value => "consultation form"} SEND
     :javascript
       var s = skrollr.init();
