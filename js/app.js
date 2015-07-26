@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   // nav link scroll animate
   $('nav a').on('click', function() {
       var scrollAnchor = $(this).attr('data-scroll'),
@@ -8,6 +9,7 @@ $(document).ready(function() {
       }, 500);
       return false;
   });
+
   // sets active menu link
   $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
@@ -22,12 +24,14 @@ $(document).ready(function() {
         $('nav li.active').removeClass('active');
     }
   }).scroll();
+
   // mobile menu
   $('.menu-button, ul a').click(function(){
     $('ul').toggleClass('show-menu');
     $('.menu-button').toggleClass('menu-open');
     $('.menu-button').toggleClass('menu-close');
   });
+
   // avoids scroll-capture for map
   $(function() {
       $('.locale-pink').click(function() {
