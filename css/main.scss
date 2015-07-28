@@ -456,3 +456,16 @@ header {
     }
   }
 }
+.social-link {
+  color: #fff;
+  opacity: 0.6;
+  transition: all 500ms ease;
+  &:hover {
+    color: #fff;
+    opacity: 1;  
+  }
+  &:visited {
+    color: #fff;
+    opacity: 0.6;
+  }
+}
