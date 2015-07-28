@@ -22,12 +22,11 @@
     .top-bar{"data-90" => "opacity: 0;", "data-650" => "opacity: .96;"}
       &nbsp;
     %nav
-      %h1
-        %h1.logo{"data-90" => "font-size: 2rem;", "data-650" => "font-size: 1.2rem;"}
-          %a{"data-scroll" => "home", :href => "#"}
-            %img{"data-90" => "width: 3rem;", "data-650" => "width: 2.5rem;", :src => "img/webkea-logo-nav.png"}
-            = precede 'WEB' do
-              %strong KEA
+      %h1.logo{"data-90" => "font-size: 2rem;", "data-650" => "font-size: 1.2rem;"}
+        %a{"data-scroll" => "home", :href => "#"}
+          %img{"data-90" => "width: 3rem;", "data-650" => "width: 2.5rem;", :src => "img/webkea-logo-nav.png"}
+          = precede 'WEB' do
+            %strong KEA
       %span.menu-button.menu-open
       %ul
         %li
@@ -199,5 +198,5 @@
                   %input.footer-email{:placeholder => "Enter your email", :name => "email", :type => "text"}/
                 .small-3.columns
                   %button.postfix.footer-email-button{:type => "submit", :value => "consultation form"} SEND
-    :javascript
-      var s = skrollr.init();
+    %script{:src => "./js/min/skrollr.js", :type => "text/javascript"}
+    %script{:src => "./js/min/detect-mobile-min.js", :type => "text/javascript"}
