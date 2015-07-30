@@ -3,6 +3,8 @@
 @media (max-width: 850px) {
   nav {
     ul {
+      position: absolute;
+      right: -5rem;
       width: 12rem;
       opacity: 1;
       margin-top: 3rem;
@@ -34,6 +36,7 @@
       content: "\2715";
     }
     .show-menu {
+      right: 4.3rem;
       opacity: 1;
       margin-right: -3rem;
     }
@@ -55,6 +58,16 @@
   }
 }
 
+
+@media (max-width: 400px) {
+  ul {
+
+  }
+  .show-menu {
+    position: absolute;
+    right: 4.3rem;
+  }
+}
 
 /*MEDIUM SCREENS*/
 

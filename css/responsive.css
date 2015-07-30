@@ -1,6 +1,8 @@
 /*SMALL SCREENS*/
 @media (max-width: 850px) {
   nav ul {
+    position: absolute;
+    right: -5rem;
     width: 12rem;
     opacity: 1;
     margin-top: 3rem;
@@ -29,6 +31,7 @@
   nav .menu-close::after {
     content: "\2715"; }
   nav .show-menu {
+    right: 4.3rem;
     opacity: 1;
     margin-right: -3rem; }
 
@@ -46,6 +49,10 @@
 
   .logo {
     font-size: 1.2rem !important; } }
+@media (max-width: 400px) {
+  .show-menu {
+    position: absolute;
+    right: 4.3rem; } }
 /*MEDIUM SCREENS*/
 @media only screen and (min-width: 40em) {
   #locale p,
