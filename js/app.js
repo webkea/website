@@ -49,4 +49,32 @@ $(document).ready(function() {
       }, 2500);
     }
   });
+  
+  //lightbox trigger
+  $('.lightbox_trigger').click(function(e) {
+
+    e.preventDefault();
+    var image_href = $(this).attr("href");
+    if ($('#lightbox').length > 0) {
+        $('#content').html('<img src="' + image_href + '" />');
+        $('.container').addClass('blur');
+        $('#lightbox').fadeIn();
+    }
+    else { 
+      var lightbox = 
+      '<div id="lightbox">' +
+        '<p>&#x2612; Click anywhere to close</p>' +
+        '<div id="content">' + 
+        '<img src="' + image_href +'" />' +
+        '<h1>" + alt + "</h1>' +  //trying to add extra text but failed
+        '</div>' +	
+      '</div>';
+      $('.container').addClass('blur');
+      $('body').append(lightbox).hide().fadeIn();
+      $('#lightbox').click(function(){
+          $('#lightbox').fadeOut();
+          $('.container').removeClass('blur');
+      });
+    }
+  });
 });

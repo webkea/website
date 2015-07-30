@@ -387,6 +387,29 @@ header {
   padding-top: 3.75rem;
 }
 
+/*LIGHTBOX*/
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(89, 190, 255,0.65) 100%,rgba(14, 189, 194,0.4) 5%);
+  text-align: center;
+  z-index: 1000;
+  p {
+    text-align: right;
+    color: #fff;
+    margin-right: 2rem;
+    font-size: 0.8rem;
+  }
+  img {
+    box-shadow: 0 0 1.8rem #111;
+    max-width: 55rem;
+  }
+}
+
 /*SECTION LOCALE*/
 
 .locale-pink {
