@@ -120,37 +120,39 @@
     .logo {
       font-size: 1.2rem !important;
     }
-  }
-  .title {
-    font-size: 2rem;
-    margin: 0;
-  }
-  .subtitle {
-    display: none;
-  }
-  header {
-    input[type="text"] {
-      width: 16rem;
-    }
-    p {
-      font-size: .8rem;
-    }
-  }
-  .header-text {
-    top: 60%;
-  }
-  #intro {
-    .columns {
-      padding-bottom: 3rem;
-    }
-  }
-  .banner-1 {
-    margin-top: 1rem;
-    height: 18rem;
+
     .title {
-      font-size: 1.6rem;
+      font-size: 2rem;
+      margin: 0;
+    }
+    .subtitle {
+      display: none;
+    }
+    header {
+      input[type="text"] {
+        width: 16rem;
+      }
+      p {
+        font-size: .8rem;
+      }
+    }
+    .header-text {
+      top: 60%;
+    }
+    #intro {
+      .columns {
+        padding-bottom: 3rem;
+      }
+    }
+    .banner-1 {
+      margin-top: 1rem;
+      height: 18rem;
+      .title {
+        font-size: 1.6rem;
+      }
     }
   }
+
 
 /*MEDIUM SCREENS*/
 
