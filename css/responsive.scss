@@ -1,8 +1,12 @@
 /*SMALL SCREENS*/
 
-@media (max-width: 850px) {
+@media only screen
+  and (min-width: 500px)
+  and (max-width: 850px) {
   nav {
     ul {
+      position: absolute;
+      right: -5rem;
       width: 12rem;
       opacity: 1;
       margin-top: 3rem;
@@ -34,6 +38,7 @@
       content: "\2715";
     }
     .show-menu {
+      right: 4.3rem;
       opacity: 1;
       margin-right: -3rem;
     }
@@ -54,6 +59,99 @@
     font-size: 1.2rem !important;
   }
 }
+
+
+@media only screen
+  and (min-width: 1px)
+  and (max-width: 500px) {
+
+    nav {
+      ul {
+        position: absolute;
+        right: -5rem;
+        width: 12rem;
+        opacity: 1;
+        margin-top: 3rem;
+        margin-right: -100%;
+        border: solid .4rem rgba(210, 231, 229, 0.8);
+        border-top: 0;
+        background-image: linear-gradient(218deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
+        transition: all 400ms ease;
+        li {
+          padding: .5rem;
+          font-size: 1rem;
+          text-align: right;
+          display: block;
+        }
+      }
+      .menu-button {
+        display: block;
+        cursor: pointer;
+        transition: all 100ms ease;
+        &:hover {
+          color: #ddd;
+        }
+      }
+      .menu-open::after {
+        font-size: 2rem;
+        content: "\2261";
+      }
+      .menu-close::after {
+        content: "\2715";
+      }
+      .show-menu {
+        opacity: 1;
+        margin-right: -3rem;
+        right: 4.3rem;
+      }
+    }
+    .nav-icons {
+      padding-left: .8rem;
+      font-size: 1.5rem;
+    }
+    .top-bar {
+      opacity: .96 !important;
+      height: 3.4rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 200;
+    }
+    .logo {
+      font-size: 1.2rem !important;
+    }
+
+    .title {
+      font-size: 2rem;
+      margin: 0;
+    }
+    .subtitle {
+      display: none;
+    }
+    header {
+      input[type="text"] {
+        width: 16rem;
+      }
+      p {
+        font-size: .8rem;
+      }
+    }
+    .header-text {
+      top: 60%;
+    }
+    #intro {
+      .columns {
+        padding-bottom: 3rem;
+      }
+    }
+    .banner-1 {
+      margin-top: 1rem;
+      height: 18rem;
+      .title {
+        font-size: 1.6rem;
+      }
+    }
+  }
 
 
 /*MEDIUM SCREENS*/
