@@ -3,6 +3,22 @@
 @media only screen
   and (min-width: 500px)
   and (max-width: 850px) {
+  .social-media {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  #work {
+    padding-top: 4rem;
+    img {
+      padding: .5rem;
+    }
+  }
+  .work-top-padding {
+    padding-top: 2rem;
+  }
+  .brand {
+    margin-bottom: 3rem;
+  }
   nav {
     ul {
       position: absolute;
@@ -64,7 +80,16 @@
 @media only screen
   and (min-width: 1px)
   and (max-width: 500px) {
-
+    #work {
+      padding-top: 5rem;
+      img {
+        padding: 1rem;
+        max-width: 80%;
+      }
+    }
+    .work-top-padding {
+      padding-top: 1rem;
+    }
     nav {
       ul {
         position: absolute;
@@ -124,6 +149,7 @@
     .title {
       font-size: 2rem;
       margin: 0;
+      padding: .4rem;
     }
     .subtitle {
       display: none;
@@ -144,6 +170,15 @@
         padding-bottom: 3rem;
       }
     }
+    .features-part2 {
+      .columns {
+        padding-bottom: 3rem;
+      }
+    }
+    .banner-2 {
+      margin-top: 1rem;
+      height: 18rem;
+    }
     .banner-1 {
       margin-top: 1rem;
       height: 18rem;
@@ -151,6 +186,19 @@
         font-size: 1.6rem;
       }
     }
+    .footer  {
+      .brand, .social-media {
+        display: none;
+      }
+    }
+    .consult {
+      margin-top: 1.4rem;
+    }
+    #locale p {
+      font-size: .8rem;
+    }
+
+
   }
 
 
@@ -169,7 +217,7 @@
   }
 
   #work img {
-    padding: 1rem;
+    padding: .7rem;
   }
 
   .work-img img {
