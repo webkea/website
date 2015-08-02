@@ -49,25 +49,26 @@ $(document).ready(function() {
       }, 2500);
     }
   });
-  
+
   //lightbox trigger
   $('.lightbox_trigger').click(function(e) {
 
     e.preventDefault();
     var image_href = $(this).attr("href");
+    var description = $(this).attr("data-description");
     if ($('#lightbox').length > 0) {
-        $('#content').html('<img src="' + image_href + '" />');
+        $('#content').html('<img src="' + image_href + '" /><p class="portfolio-description">' + description + '<p>');
         $('.container').addClass('blur');
         $('#lightbox').fadeIn();
     }
-    else { 
-      var lightbox = 
+    else {
+      var lightbox =
       '<div id="lightbox">' +
         '<p>&#x2612; Click anywhere to close</p>' +
-        '<div id="content">' + 
+        '<div id="content">' +
         '<img src="' + image_href +'" />' +
-        '<h1>" + alt + "</h1>' +  //trying to add extra text but failed
-        '</div>' +	
+        '<p class="portfolio-description">' + description + '<p>' +
+        '</div>' +
       '</div>';
       $('.container').addClass('blur');
       $('body').append(lightbox).hide().fadeIn();
