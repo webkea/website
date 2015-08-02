@@ -7,7 +7,8 @@
   #work {
     padding-top: 4rem; }
     #work img {
-      padding: .5rem; }
+      margin: .7rem auto;
+      max-width: 80%; }
 
   .work-top-padding {
     padding-top: 2rem; }
@@ -68,7 +69,6 @@
   #work {
     padding-top: 5rem; }
     #work img {
-      padding: 1rem;
       max-width: 80%; }
 
   .work-top-padding {
@@ -173,9 +173,6 @@
   #locale p {
     padding: 0 1rem 1rem 0;
     font-size: 13px; }
-
-  #work img {
-    padding: .7rem; }
 
   .work-img img {
     max-width: 100%; } }
