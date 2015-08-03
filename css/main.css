@@ -71,8 +71,7 @@ nav {
       padding: .8rem;
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none;
-      -webkit-transition: all ease 260ms;
-              transition: all ease 260ms; }
+      transition: all ease 260ms; }
       nav li a:hover {
         color: #fff;
         text-shadow: 0 0 3px #FFF; }
@@ -119,7 +118,6 @@ nav {
 /*1rem = 16px*/
 /*FULLSCREEN HEADER*/
 header {
-  background-image: -webkit-linear-gradient(top, rgba(3, 118, 188, 0.72), rgba(36, 172, 171, 0.39)), url("../img/ocean.jpeg");
   background-image: linear-gradient(top, rgba(3, 118, 188, 0.72), rgba(36, 172, 171, 0.39)), url("../img/ocean.jpeg");
   background-attachment: fixed;
   background-position: center center;
@@ -181,9 +179,7 @@ header {
   font-family: Ubuntu, Helvetica, sans-serif;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   text-align: center;
   color: white; }
 
@@ -192,9 +188,7 @@ header {
   position: relative;
   font-family: Ubuntu, Helvetica, sans-serif;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   color: white;
   font-weight: 400;
   font-size: 3.5rem;
@@ -260,7 +254,9 @@ header {
 .banner-1 {
   width: 100%;
   height: 25rem;
+  background-image: -moz-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
   background-image: -webkit-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
+  background-image: -ms-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
   background-image: linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-1.jpg");
   background-attachment: fixed;
   background-position: center center;
@@ -295,7 +291,9 @@ header {
 .banner-2 {
   width: 100%;
   height: 25rem;
+  background-image: -moz-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-2.jpg");
   background-image: -webkit-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-2.jpg");
+  background-image: -ms-linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-2.jpg");
   background-image: linear-gradient(rgba(89, 190, 255, 0.72), rgba(14, 189, 194, 0.59)), url("../img/banner-2.jpg");
   background-attachment: fixed;
   background-position: center center;
@@ -309,8 +307,7 @@ header {
   margin: 2rem;
   border: solid .6rem whitesmoke;
   width: 90%;
-  -webkit-transition: all 300ms ease;
-          transition: all 300ms ease; }
+  transition: all 300ms ease; }
   #work img:hover {
     width: 100%; }
 
@@ -324,13 +321,12 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(45deg, rgba(89, 190, 255, 0.9) 100%, rgba(14, 189, 194, 0.9) 5%);
-  background: linear-gradient(45deg, rgba(89, 190, 255, 0.9) 100%, rgba(14, 189, 194, 0.9) 5%);
+  background: linear-gradient(45deg, rgba(89, 190, 255, 0.82) 100%, rgba(14, 189, 194, 0.75) 5%);
   text-align: center;
   z-index: 1000; }
   #lightbox p {
     text-align: right;
-    color: #fff;
+    color: #000;
     margin-right: 2rem;
     font-size: 0.8rem; }
   #lightbox .portfolio-description {
@@ -342,12 +338,35 @@ header {
     max-width: 50rem; }
   #lightbox img {
     margin-top: 3rem;
-    box-shadow: 0 0 1.8rem #111;
-    max-width: 55rem; }
+    width: 80%;
+    max-width: 55rem;
+    padding-top: 1rem; }
+
+#content {
+  background: whitesmoke;
+  margin: 5%;
+  height: 80%;
+  overflow: auto;
+  box-shadow: 0 0 1.8rem rgba(17, 17, 17, 0.6);
+  position: relative; }
+
+.close-box {
+  padding: .8rem;
+  position: absolute;
+  top: .5rem;
+  right: .5rem; }
+  .close-box span {
+    padding: .3rem .5rem;
+    background: rgba(89, 190, 255, 0.6);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 250ms ease; }
+    .close-box span:hover {
+      background: #59beff; }
 
 /*SECTION LOCALE*/
 .locale-pink {
-  background-image: -webkit-radial-gradient(50% 50%, circle, #467287, #28ADAC);
   background-image: radial-gradient(circle at 50% 50%, #467287, #28ADAC);
   color: white;
   padding-bottom: 3.5rem; }
@@ -399,8 +418,7 @@ header {
 .social-link {
   color: #fff;
   opacity: 0.6;
-  -webkit-transition: all 500ms ease;
-          transition: all 500ms ease; }
+  transition: all 500ms ease; }
   .social-link:hover {
     color: #fff;
     opacity: 1; }

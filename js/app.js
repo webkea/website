@@ -57,15 +57,15 @@ $(document).ready(function() {
     var image_href = $(this).attr("href");
     var description = $(this).attr("data-description");
     if ($('#lightbox').length > 0) {
-        $('#content').html('<img src="' + image_href + '" /><p class="portfolio-description">' + description + '<p>');
+        $('#content').html('<div class="close-box"><span>&#10005;</span></div><img src="' + image_href + '" /><p class="portfolio-description">' + description + '<p>');
         $('.container').addClass('blur');
         $('#lightbox').fadeIn();
     }
     else {
       var lightbox =
       '<div id="lightbox">' +
-        '<p>&#x2612; Click anywhere to close</p>' +
         '<div id="content">' +
+        '<div class="close-box"><span>&#10005;</span></div>' + 
         '<img src="' + image_href +'" />' +
         '<p class="portfolio-description">' + description + '<p>' +
         '</div>' +

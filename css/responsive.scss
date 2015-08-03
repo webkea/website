@@ -1,7 +1,7 @@
 /*SMALL SCREENS*/
 
 @media only screen
-  and (min-width: 500px)
+  and (min-width: 641px)
   and (max-width: 850px) {
   .social-media {
     text-align: center;
@@ -75,12 +75,16 @@
   .logo {
     font-size: 1.2rem !important;
   }
+  .title {
+    padding: .4rem;
+  }
+  
 }
 
 
 @media only screen
   and (min-width: 1px)
-  and (max-width: 500px) {
+  and (max-width: 640px) {
     #work {
       padding-top: 5rem;
       img {

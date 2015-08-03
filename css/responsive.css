@@ -1,5 +1,5 @@
 /*SMALL SCREENS*/
-@media only screen and (min-width: 500px) and (max-width: 850px) {
+@media only screen and (min-width: 641px) and (max-width: 850px) {
   .social-media {
     text-align: center;
     padding-bottom: 3rem; }
@@ -25,10 +25,8 @@
     margin-right: -100%;
     border: solid 0.4rem rgba(210, 231, 229, 0.8);
     border-top: 0;
-    background-image: -webkit-linear-gradient(232deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
     background-image: linear-gradient(218deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
-    -webkit-transition: all 400ms ease;
-            transition: all 400ms ease; }
+    transition: all 400ms ease; }
     nav ul li {
       padding: .5rem;
       font-size: 1rem;
@@ -37,8 +35,7 @@
   nav .menu-button {
     display: block;
     cursor: pointer;
-    -webkit-transition: all 100ms ease;
-            transition: all 100ms ease; }
+    transition: all 100ms ease; }
     nav .menu-button:hover {
       color: #ddd; }
   nav .menu-open::after {
@@ -64,8 +61,11 @@
     z-index: 200; }
 
   .logo {
-    font-size: 1.2rem !important; } }
-@media only screen and (min-width: 1px) and (max-width: 500px) {
+    font-size: 1.2rem !important; }
+
+  .title {
+    padding: .4rem; } }
+@media only screen and (min-width: 1px) and (max-width: 640px) {
   #work {
     padding-top: 5rem; }
     #work img {
@@ -83,10 +83,8 @@
     margin-right: -100%;
     border: solid 0.4rem rgba(210, 231, 229, 0.8);
     border-top: 0;
-    background-image: -webkit-linear-gradient(232deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
     background-image: linear-gradient(218deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
-    -webkit-transition: all 400ms ease;
-            transition: all 400ms ease; }
+    transition: all 400ms ease; }
     nav ul li {
       padding: .5rem;
       font-size: 1rem;
@@ -95,8 +93,7 @@
   nav .menu-button {
     display: block;
     cursor: pointer;
-    -webkit-transition: all 100ms ease;
-            transition: all 100ms ease; }
+    transition: all 100ms ease; }
     nav .menu-button:hover {
       color: #ddd; }
   nav .menu-open::after {
