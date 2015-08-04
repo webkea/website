@@ -25,8 +25,10 @@
     margin-right: -100%;
     border: solid 0.4rem rgba(210, 231, 229, 0.8);
     border-top: 0;
+    background-image: -webkit-linear-gradient(232deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
     background-image: linear-gradient(218deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
-    transition: all 400ms ease; }
+    -webkit-transition: all 400ms ease;
+            transition: all 400ms ease; }
     nav ul li {
       padding: .5rem;
       font-size: 1rem;
@@ -35,7 +37,8 @@
   nav .menu-button {
     display: block;
     cursor: pointer;
-    transition: all 100ms ease; }
+    -webkit-transition: all 100ms ease;
+            transition: all 100ms ease; }
     nav .menu-button:hover {
       color: #ddd; }
   nav .menu-open::after {
@@ -83,8 +86,10 @@
     margin-right: -100%;
     border: solid 0.4rem rgba(210, 231, 229, 0.8);
     border-top: 0;
+    background-image: -webkit-linear-gradient(232deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
     background-image: linear-gradient(218deg, #1cbbb4 0%, #24afaa 0%, #0072bc 100%);
-    transition: all 400ms ease; }
+    -webkit-transition: all 400ms ease;
+            transition: all 400ms ease; }
     nav ul li {
       padding: .5rem;
       font-size: 1rem;
@@ -93,7 +98,8 @@
   nav .menu-button {
     display: block;
     cursor: pointer;
-    transition: all 100ms ease; }
+    -webkit-transition: all 100ms ease;
+            transition: all 100ms ease; }
     nav .menu-button:hover {
       color: #ddd; }
   nav .menu-open::after {
