@@ -149,12 +149,12 @@ nav {
 
 header {
   background-image: linear-gradient(top, rgba(3, 118, 188, 0.72), rgba(36, 172, 171, 0.39)), url("../img/ocean.jpeg");
-  background-attachment: fixed;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   .main-form {
     position: relative;
     margin: 2rem auto .4rem auto;

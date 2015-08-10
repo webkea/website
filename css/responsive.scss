@@ -76,9 +76,12 @@
     font-size: 1.2rem !important;
   }
   .title {
-    padding: .4rem;
+    font-size: 2.8rem;
   }
-  
+  .header-text {
+    top: 60%;
+  }
+
 }
 
 
@@ -225,3 +228,26 @@
     max-width: 100%;
   }
 }
+
+// /* Landscape iphone 6*/
+// @media only screen
+//   and (min-device-width: 375px)
+//   and (max-device-width: 667px)
+// {
+//   header {
+//     .header-text {
+//       font-size: 2.8rem;
+//       top: 60%;
+//     }
+//   }
+// }
+// /* Landscape iphone 6+*/
+// @media only screen
+//   and (min-device-width: 414px)
+//   and (max-device-width: 736px)
+//   and (-webkit-min-device-pixel-ratio: 3)
+//   and (orientation: landscape) {
+//     .header-text {
+//       top: 60%;
+//     }
+// }
