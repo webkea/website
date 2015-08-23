@@ -543,3 +543,22 @@ blockquote p {
     opacity: 0.6;
   }
 }
+.phone {
+  padding: .8rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all ease 260ms;
+  &:hover {
+    color: #fff;
+    text-shadow: 0 0 3px #FFF;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  &:visited {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  &:focus {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
