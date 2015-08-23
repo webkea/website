@@ -81,7 +81,9 @@
   .header-text {
     top: 60%;
   }
-
+  .banner-1, .banner-2 {
+    background-attachment: scroll;
+  }
 }
 
 
@@ -183,10 +185,12 @@
       }
     }
     .banner-2 {
+      background-attachment: scroll;
       margin-top: 1rem;
       height: 18rem;
     }
     .banner-1 {
+      background-attachment: scroll;      
       margin-top: 1rem;
       height: 18rem;
       .title {
