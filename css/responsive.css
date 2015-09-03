@@ -1,7 +1,6 @@
 /*SMALL SCREENS*/
-@media only screen and (min-width: 641px) and (max-width: 850px) {
+@media only screen and (min-width: 641px) and (max-width: 950px) {
   .social-media {
-    text-align: center;
     padding-bottom: 3rem; }
 
   #work {
@@ -162,7 +161,7 @@
     .banner-1 .title {
       font-size: 1.6rem; }
 
-  .footer .brand, .footer .social-media {
+  .footer .brand {
     display: none; }
 
   .consult {
