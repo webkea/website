@@ -87,8 +87,8 @@
             %p.wow.zoomIn{"data-wow-offset" => "50", "data-wow-delay" => ".6s"} Our motto is Responsive Design for every Business and for every Budget!
         .columns.medium-4
           %img.wow.zoomIn{:src => "img/intro-mac.jpg", :alt => "MacBook" , "data-wow-offset" => "130", "data-wow-delay" => ".9s"}
-            %h3.wow.zoomIn{"data-wow-offset" => "130", "data-wow-delay" => ".9s"} DEPLOYMENT
-            %p.wow.zoomIn{"data-wow-offset" => "130", "data-wow-delay" => ".9s"} We believe in offering you a total solution for your online brand.
+            %h3.wow.zoomIn{"data-wow-offset" => "50", "data-wow-delay" => ".9s"} DEPLOYMENT
+            %p.wow.zoomIn{"data-wow-offset" => "50", "data-wow-delay" => ".9s"} We believe in offering you a total solution for your online brand.
       .banner-1
         %h2.title
           Delivering Your Brand To All Devices
@@ -216,4 +216,12 @@
     %script{:src => "./js/min/detect-mobile-min.js", :type => "text/javascript"}
     %script{:src => "js/min/wow.js"}
     :javascript
-      new WOW().init();
+      var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       false       // trigger animations on mobile devices (true is default)
+        }
+      );
+      wow.init();

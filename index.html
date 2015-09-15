@@ -122,8 +122,8 @@
         </div>
         <div class='columns medium-4'>
           <img alt='MacBook' class='wow zoomIn' data-wow-delay='.9s' data-wow-offset='130' src='img/intro-mac.jpg'>
-            <h3 class='wow zoomIn' data-wow-delay='.9s' data-wow-offset='130'>DEPLOYMENT</h3>
-            <p class='wow zoomIn' data-wow-delay='.9s' data-wow-offset='130'>We believe in offering you a total solution for your online brand.</p>
+            <h3 class='wow zoomIn' data-wow-delay='.9s' data-wow-offset='50'>DEPLOYMENT</h3>
+            <p class='wow zoomIn' data-wow-delay='.9s' data-wow-offset='50'>We believe in offering you a total solution for your online brand.</p>
           </img>
         </div>
       </div>
@@ -314,7 +314,15 @@
     <script src='./js/min/detect-mobile-min.js' type='text/javascript'></script>
     <script src='js/min/wow.js'></script>
     <script>
-      new WOW().init();
+      var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       false       // trigger animations on mobile devices (true is default)
+        }
+      );
+      wow.init();
     </script>
   </body>
 </html>
