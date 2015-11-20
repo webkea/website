@@ -90,9 +90,11 @@
 @media only screen
   and (min-width: 1px)
   and (max-width: 640px) {
+    #consultation {
+      display: none;
+    }
     .scroll-down {
-      bottom: .65rem;
-      font-size: 1.2rem;
+      font-size: .7rem;
     }
     #work {
       padding-top: 5rem;
@@ -162,10 +164,16 @@
     .title {
       font-size: 2rem;
       margin: 0;
-      padding: .4rem;
+      padding: 0 .2rem;
+    }
+    .title-banner {
+      font-size: 2rem;
+      margin: 0;
+      padding: 0 .2rem;
     }
     .subtitle {
-      display: none;
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
     }
     header {
       input[type="text"] {

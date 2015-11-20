@@ -21,6 +21,22 @@
     <script src='js/min/app-min.js'></script>
   </head>
   <body>
+    <div id='consultation'>
+      <span class='close-consult-box'></span>
+      <h4>REQUEST A CONSULT</h4>
+      <p>Interested in a free consultation? Enter your email address below and we’ll get in touch with you.</p>
+      <form action='https://getsimpleform.com/messages?form_api_token=0fc8288fc7fbb65677132d49252e7582' class='footer-email-form' method='post'>
+        <div class='row collapse postfix-round'>
+          <div class='small-9 columns'>
+            <input name='redirect_to' type='hidden' value='http://webkea.co.nz/#thanks'>
+            <input class='footer-email' name='email' placeholder='Enter your email' type='text'>
+          </div>
+          <div class='small-3 columns'>
+            <button class='postfix footer-email-button' type='submit' value='consultation form'>SEND</button>
+          </div>
+        </div>
+      </form>
+    </div>
     <div class='top-bar' data-650='opacity: .96;' data-90='opacity: 0;'>
       &nbsp;
     </div>
@@ -91,20 +107,8 @@
         <h3 class='subtitle'>
           Taking your business to the cloud
         </h3>
-        <div class='main-form'>
-          <form action='https://getsimpleform.com/messages?form_api_token=0fc8288fc7fbb65677132d49252e7582' method='post'>
-            <input name='redirect_to' type='hidden' value='http://webkea.co.nz/#thanks'>
-            <input name='email' placeholder='enter your email' type='text'>
-            <button class='email-button' type='submit' value='consultation form'>
-              <i class='fa fa-arrow-circle-right submit'></i>
-            </button>
-          </form>
-        </div>
-        <p>
-          Get in touch for a free consultation
-        </p>
+        <a class='scroll-down' data-scroll='intro' href='#intro'>LEARN MORE</a>
       </div>
-      <a class='i scroll-down fa fa-chevron-circle-down' data-scroll='intro' href='#intro'></a>
     </header>
     <section class='page' data-anchor='intro' id='intro'>
       <div class='row'>
@@ -128,7 +132,7 @@
         </div>
       </div>
       <div class='banner-1'>
-        <h2 class='title'>
+        <h2 class='title-banner'>
           Delivering Your Brand To All Devices
           <br>With Design-Powered Solutions.</br>
         </h2>
@@ -197,7 +201,7 @@
         </div>
       </div>
       <div class='banner-2'>
-        <h2 class='title'>
+        <h2 class='title-banner'>
           Passionate. Driven. Creative.
           <br>We Live For Design.</br>
         </h2>

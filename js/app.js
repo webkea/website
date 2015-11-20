@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  $('#consultation').hide();
   // nav link scroll animate
   $('nav a, .scroll-down').on('click', function() {
       var scrollAnchor = $(this).attr('data-scroll'),
@@ -8,6 +8,13 @@ $(document).ready(function() {
           scrollTop: scrollPoint
       }, 500);
       return false;
+  });
+
+  $('body').one('mouseleave', (function(){
+    $('#consultation').fadeIn('fast');
+  }));
+  $('.close-consult-box').click(function(){
+    $('#consultation').fadeOut('fast');
   });
 
   // sets active menu link

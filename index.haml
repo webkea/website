@@ -20,6 +20,18 @@
     %script{:src => "js/min/skrollr.js"}
     %script{:src => "js/min/app-min.js"}
   %body
+    #consultation
+      %span.close-consult-box
+      %h4 REQUEST A CONSULT
+      %p Interested in a free consultation? Enter your email address below and we’ll get in touch with you.
+      %form.footer-email-form{:action => "https://getsimpleform.com/messages?form_api_token=0fc8288fc7fbb65677132d49252e7582", :method => "post"}
+        .row.collapse.postfix-round
+          .small-9.columns
+            %input{:name => "redirect_to", :type => "hidden", :value => "http://webkea.co.nz/#thanks"}/
+            %input.footer-email{:placeholder => "Enter your email", :name => "email", :type => "text"}/
+          .small-3.columns
+            %button.postfix.footer-email-button{:type => "submit", :value => "consultation form"} SEND
+
     .top-bar{"data-90" => "opacity: 0;", "data-650" => "opacity: .96;"}
       &nbsp;
     %nav
@@ -66,15 +78,7 @@
           Brilliant Online Creations.
         %h3.subtitle
           Taking your business to the cloud
-        .main-form
-          %form{:action => "https://getsimpleform.com/messages?form_api_token=0fc8288fc7fbb65677132d49252e7582", :method => "post"}
-            %input{:name => "redirect_to", :type => "hidden", :value => "http://webkea.co.nz/#thanks"}/
-            %input{:type => "text", :name => "email", :placeholder => "enter your email"}/
-            %button.email-button{:type => "submit", :value => "consultation form"}
-              %i.fa.fa-arrow-circle-right.submit
-        %p
-          Get in touch for a free consultation
-      %a.i.scroll-down.fa.fa-chevron-circle-down{"data-scroll" => "intro", :href => '#intro'}
+        %a.scroll-down{"data-scroll" => "intro", :href => '#intro'} LEARN MORE
     %section#intro.page{"data-anchor" => "intro"}
       .row
         .columns.medium-4
@@ -90,7 +94,7 @@
             %h3.wow.zoomIn{"data-wow-offset" => "50", "data-wow-delay" => ".9s"} DEPLOYMENT
             %p.wow.zoomIn{"data-wow-offset" => "50", "data-wow-delay" => ".9s"} We believe in offering you a total solution for your online brand.
       .banner-1
-        %h2.title
+        %h2.title-banner
           Delivering Your Brand To All Devices
           %br With Design-Powered Solutions.
     %section#features.page{"data-anchor" => "features"}
@@ -143,7 +147,7 @@
               %strong.wow.zoomIn{"data-wow-offset" => "50", "data-wow-delay" => ".9s"}> APPS
             %p.wow.zoomIn{"data-wow-offset" => "50", "data-wow-delay" => ".9s"} Solutions for CMS, e-commerce or high-end web applications. Update your content as you like.
       .banner-2
-        %h2.title
+        %h2.title-banner
           Passionate. Driven. Creative.
           %br We Live For Design.
     %section#work.page{"data-anchor" => "work"}
