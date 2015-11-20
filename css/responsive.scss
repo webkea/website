@@ -90,6 +90,10 @@
 @media only screen
   and (min-width: 1px)
   and (max-width: 640px) {
+    .scroll-down {
+      bottom: .65rem;
+      font-size: 1.2rem;
+    }
     #work {
       padding-top: 5rem;
       img {
