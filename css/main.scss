@@ -212,6 +212,21 @@ header {
   }
 }
 
+.scroll-down {
+  opacity: .7;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  transition: opacity 270ms ease;
+  &:hover {
+    opacity: 1;
+    color: #fff;
+  }
+}
+
 .submit {
   vertical-align: middle;
   margin-left: -3.6rem;

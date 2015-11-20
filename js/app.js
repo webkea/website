@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // nav link scroll animate
-  $('nav a').on('click', function() {
+  $('nav a, .scroll-down').on('click', function() {
       var scrollAnchor = $(this).attr('data-scroll'),
           scrollPoint = $('.page[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
       $('body,html').animate({
@@ -65,9 +65,9 @@ $(document).ready(function() {
       var lightbox =
       '<div id="lightbox">' +
         '<div id="content">' +
-        '<div class="close-box"><span>&#10005;</span></div>' + 
+        '<div class="close-box"><span>&#10005;</span></div>' +
         '<img src="' + image_href +'" />' +
-        description + 
+        description +
         '</div>' +
       '</div>';
       $('.container').addClass('blur');

@@ -29,8 +29,12 @@
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^2.0.3",
-    "gulp-slim": "^0.1.0",
+    "gulp-haml": "^0.1.6",
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.6"
+  },
+  "dependencies": {
+    "gulp-haml": "^0.1.6",
+    "imagemin-pngquant": "^4.2.0"
   }
 }
